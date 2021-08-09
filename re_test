@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd /home/debian/re_test
+gpio clear 2
+gpio clear 3
+gpio clear 50
+gpio clear 51
+gpio clear 22
+gpio clear 23
+
+./re_eth0 &
+./re_usb &
+./re_tf &
+sleep 10000
