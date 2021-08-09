@@ -6,6 +6,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 #cp re_test /usr/bin/
+cp leds /usr/bin
+cp gpio /usr/bin
 cp re.service /lib/systemd/system/
 systemctl enable re.service
 systemctl start re
